@@ -36,7 +36,7 @@ def serve_index():
 def search_papers():
     query = request.args.get("query")
     offset = request.args.get("offset", 0)
-    limit = request.args.get("limit", 10)
+    limit = request.args.get("limit", 5)
     fields = "title,authors,abstract,influentialCitationCount,citationCount"
 
     response = requests.get(
