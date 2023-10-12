@@ -5,7 +5,7 @@ import os
 
 app = Flask(__name__)
 # allow cors for all domains on all routes
-CORS(app, origins="https://chat.openai.com")
+CORS(app)
 
 
 # Serve .well-known/ai-plugin.json
